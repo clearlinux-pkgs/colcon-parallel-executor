@@ -4,7 +4,7 @@
 #
 Name     : colcon-parallel-executor
 Version  : 0.2.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/84/34/8725ff6f3ce87ffe1e16ca4a39fdcc77d252e66354c3862491007b7a889d/colcon-parallel-executor-0.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/84/34/8725ff6f3ce87ffe1e16ca4a39fdcc77d252e66354c3862491007b7a889d/colcon-parallel-executor-0.2.1.tar.gz
 Summary  : Extension for colcon to process packages in parallel.
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: colcon-parallel-executor-python3
 Requires: colcon-parallel-executor-python
+Requires: colcon-core
 BuildRequires : buildreq-distutils3
 
 %description
@@ -43,7 +44,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532980933
+export SOURCE_DATE_EPOCH=1533002812
 python3 setup.py build -b py3
 
 %install
