@@ -4,7 +4,7 @@
 #
 Name     : colcon-parallel-executor
 Version  : 0.2.4
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/61/c6/4b4c91a398ecf6f8de4fad2d6f13d6289d4f50db471f13d2433737b1c520/colcon-parallel-executor-0.2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/61/c6/4b4c91a398ecf6f8de4fad2d6f13d6289d4f50db471f13d2433737b1c520/colcon-parallel-executor-0.2.4.tar.gz
 Summary  : Extension for colcon to process packages in parallel.
