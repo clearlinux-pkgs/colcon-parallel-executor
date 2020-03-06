@@ -4,7 +4,7 @@
 #
 Name     : colcon-parallel-executor
 Version  : 0.2.4
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/61/c6/4b4c91a398ecf6f8de4fad2d6f13d6289d4f50db471f13d2433737b1c520/colcon-parallel-executor-0.2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/61/c6/4b4c91a398ecf6f8de4fad2d6f13d6289d4f50db471f13d2433737b1c520/colcon-parallel-executor-0.2.4.tar.gz
 Summary  : Extension for colcon to process packages in parallel.
@@ -17,10 +17,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : colcon-core
 
 %description
-colcon-parallel-executor
 ========================
-
-An extension for `colcon-core <https://github.com/colcon/colcon-core>`_ to process packages in parallel.
 
 %package python
 Summary: python components for the colcon-parallel-executor package.
@@ -35,7 +32,8 @@ python components for the colcon-parallel-executor package.
 Summary: python3 components for the colcon-parallel-executor package.
 Group: Default
 Requires: python3-core
-Provides: pypi(colcon-parallel-executor)
+Provides: pypi(colcon_parallel_executor)
+Requires: pypi(colcon_core)
 
 %description python3
 python3 components for the colcon-parallel-executor package.
@@ -50,8 +48,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582910310
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583528310
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
